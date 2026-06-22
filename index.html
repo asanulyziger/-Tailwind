@@ -61,34 +61,34 @@
             <h1 class="text-[32px] leading-[39px] font-bold text-black mb-[28px]">Checkout</h1>
             <h2 class="text-[20px] leading-[24px] font-bold text-black mb-[24px]">Shipping Information</h2>
 
-            <form class="flex flex-col gap-[24px]">
+            <form id="checkout-form" class="flex flex-col gap-[24px]">
 
                 <div class="flex flex-col gap-[8px]">
                     <label class="text-[16px] leading-[20px] font-medium text-black after:content-['*'] after:ml-1 after:text-red-500">
                         Full name
                     </label>
-                    <input type="text" placeholder="Enter full name" class="w-full h-[51px] border border-brand-border rounded-[8px] px-[16px] text-[16px] placeholder-brand-text-muted focus:outline-none focus:ring-1 focus:ring-brand-blue focus:border-brand-blue bg-white">
+                    <input type="text" id="full-name" required placeholder="Enter full name" class="w-full h-[51px] border border-brand-border rounded-[8px] px-[16px] text-[16px] placeholder-brand-text-muted focus:outline-none focus:ring-1 focus:ring-brand-blue focus:border-brand-blue bg-white">
                 </div>
 
                 <div class="flex flex-col gap-[8px]">
                     <label class="text-[16px] leading-[20px] font-medium text-black after:content-['*'] after:ml-1 after:text-red-500">
                         Email address
                     </label>
-                    <input type="email" placeholder="Enter email address" class="w-full h-[51px] border border-brand-border rounded-[8px] px-[16px] text-[16px] placeholder-brand-text-muted focus:outline-none focus:ring-1 focus:ring-brand-blue focus:border-brand-blue bg-white">
+                    <input type="email" required placeholder="Enter email address" class="w-full h-[51px] border border-brand-border rounded-[8px] px-[16px] text-[16px] placeholder-brand-text-muted focus:outline-none focus:ring-1 focus:ring-brand-blue focus:border-brand-blue bg-white">
                 </div>
 
                 <div class="flex flex-col gap-[8px]">
                     <label class="text-[16px] leading-[20px] font-medium text-black after:content-['*'] after:ml-1 after:text-red-500">
                         Phone number
                     </label>
-                    <input type="tel" placeholder="Enter phone number" class="w-full h-[51px] border border-brand-border rounded-[8px] px-[16px] text-[16px] placeholder-brand-text-muted focus:outline-none focus:ring-1 focus:ring-brand-blue focus:border-brand-blue bg-white">
+                    <input type="tel" id="phone-number" required placeholder="Enter phone number" class="w-full h-[51px] border border-brand-border rounded-[8px] px-[16px] text-[16px] placeholder-brand-text-muted focus:outline-none focus:ring-1 focus:ring-brand-blue focus:border-brand-blue bg-white">
                 </div>
 
                 <div class="flex flex-col gap-[8px]">
                     <label class="text-[16px] leading-[20px] font-medium text-black after:content-['*'] after:ml-1 after:text-red-500">
                         Country
                     </label>
-                    <input type="text" placeholder="Enter your country" class="w-full h-[51px] border border-brand-border rounded-[8px] px-[16px] text-[16px] placeholder-brand-text-muted focus:outline-none focus:ring-1 focus:ring-brand-blue focus:border-brand-blue bg-white">
+                    <input type="text" required placeholder="Enter your country" class="w-full h-[51px] border border-brand-border rounded-[8px] px-[16px] text-[16px] placeholder-brand-text-muted focus:outline-none focus:ring-1 focus:ring-brand-blue focus:border-brand-blue bg-white">
                 </div>
 
                 <div class="grid grid-cols-1 md:grid-cols-3 gap-[20px]">
@@ -116,7 +116,7 @@
 
                 <div class="flex gap-[16px] items-center h-[100px]">
                     <div class="w-[100px] h-[100px] bg-white border border-[#D4D4D4] rounded-[8px] overflow-hidden flex-shrink-0 flex items-center justify-center p-2">
-                        <img src="https://images.unsplash.com/photo-1555041469-a586c61ea9bc?auto=format&fit=crop&w=100&q=80" alt="DuoComfort Sofa Premium" class="w-full h-full object-cover">
+                        <img src="./src/assets/image3.png" alt="диван">
                     </div>
                     <div class="flex flex-col justify-center h-full flex-1">
                         <div class="flex flex-col gap-[8px] mb-auto">
@@ -129,8 +129,7 @@
 
                 <div class="flex gap-[16px] items-center h-[100px]">
                     <div class="w-[100px] h-[100px] bg-white border border-[#D4D4D4] rounded-[8px] overflow-hidden flex-shrink-0 flex items-center justify-center p-2">
-                        <img src="https://images.unsplash.com/photo-1518455027359-f3f8164ba6bd?auto=format&fit=crop&w=100&q=80" alt="IronOne Desk" class="w-full h-full object-cover">
-                    </div>
+                        <img src="./src/assets/image4.png" alt="кресло">                    </div>
                     <div class="flex flex-col justify-center h-full flex-1">
                         <div class="flex flex-col gap-[8px] mb-auto">
                             <h3 class="text-black font-medium text-[16px] leading-[20px]">IronOne Desk</h3>
@@ -164,7 +163,7 @@
                     <span class="text-[16px] font-bold text-black leading-[20px]">$40.00</span>
                 </div>
 
-                <button type="button" class="w-full h-[52px] bg-brand-blue hover:bg-brand-blue-hover text-white font-bold text-[16px] rounded-[8px] flex items-center justify-center transition-colors duration-200">
+                <button type="submit" form="checkout-form" class="w-full h-[52px] bg-brand-blue hover:bg-brand-blue-hover text-white font-bold text-[16px] rounded-[8px] flex items-center justify-center transition-colors duration-200">
                     Pay Now
                 </button>
             </div>
@@ -175,9 +174,10 @@
 
 <footer class="h-[88px] bg-white flex items-center justify-center w-full mt-auto">
     <div class="text-[12px] font-medium text-brand-text-gray px-[20px] text-center">
-        © 2026 Furniture, Inc. All Rights Reserved
+        © 2025 Furniture, Inc. All Rights Reserved
     </div>
 </footer>
 
+<script type="module" src="./src/index.js"></script>
 </body>
 </html>
