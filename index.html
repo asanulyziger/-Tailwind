@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout - Furniture</title>
+
+    <link rel="stylesheet" href="./src/style.css">
+</head>
+<body class="bg-brand-bg min-h-screen text-brand-text font-sans flex flex-col">
+
+<header class="bg-white flex items-center w-full relative z-10 h-[130px] sm:h-[88px]">
+    <div class="max-w-[1280px] w-full mx-auto px-[20px] lg:px-[80px] flex flex-col sm:flex-row items-start sm:items-center justify-between h-[90px] sm:h-[48px]">
+
+        <a href="#" class="text-[36px] font-bold text-brand-blue uppercase leading-none">
+            FURNITURE
+        </a>
+
+        <div class="flex items-center mt-auto sm:mt-0">
+
+            <div class="group flex items-center cursor-pointer gap-2">
+                <div class="w-[32px] h-[32px] rounded-full border border-brand-border bg-brand-step-bg flex items-center justify-center transition-colors duration-200 group-hover:bg-brand-blue group-hover:border-brand-blue text-brand-blue group-hover:text-white">
+                    <svg class="w-5 h-5 group-hover:hidden" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"></path>
+                    </svg>
+                    <span class="hidden group-hover:block text-[14px] font-bold">1</span>
+                </div>
+                <span class="text-[16px] text-black">Cart</span>
+            </div>
+
+            <div class="w-[8px] sm:w-[48px] h-px bg-brand-border mx-2"></div>
+
+            <div class="group flex items-center cursor-pointer gap-2">
+                <div class="w-[32px] h-[32px] rounded-full border border-brand-border bg-brand-step-bg flex items-center justify-center transition-colors duration-200 group-hover:bg-brand-blue group-hover:border-brand-blue text-brand-blue group-hover:text-white">
+                    <svg class="w-5 h-5 group-hover:hidden" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"></path>
+                    </svg>
+                    <span class="hidden group-hover:block text-[14px] font-bold">2</span>
+                </div>
+                <span class="text-[16px] text-black">Review</span>
+            </div>
+
+            <div class="w-[8px] sm:w-[48px] h-px bg-brand-border mx-2"></div>
+
+            <div class="flex items-center gap-2">
+                <div class="w-[32px] h-[32px] rounded-full bg-brand-blue flex items-center justify-center">
+                    <span class="text-[14px] font-bold text-white">3</span>
+                </div>
+                <span class="text-[16px] text-black">Checkout</span>
+            </div>
+
+        </div>
+    </div>
+</header>
+
+<main class="flex-grow w-full pt-[40px] pb-[88px]">
+    <div class="max-w-[1280px] w-full mx-auto px-[20px] lg:px-[80px] flex flex-col lg:flex-row gap-[40px] lg:gap-[80px]">
+
+        <div class="w-full md:w-[672px] flex-shrink-0">
+
+            <h1 class="text-[32px] leading-[39px] font-bold text-black mb-[28px]">Checkout</h1>
+            <h2 class="text-[20px] leading-[24px] font-bold text-black mb-[24px]">Shipping Information</h2>
+
+            <form class="flex flex-col gap-[24px]">
+
+                <div class="flex flex-col gap-[8px]">
+                    <label class="text-[16px] leading-[20px] font-medium text-black after:content-['*'] after:ml-1 after:text-red-500">
+                        Full name
+                    </label>
+                    <input type="text" placeholder="Enter full name" class="w-full h-[51px] border border-brand-border rounded-[8px] px-[16px] text-[16px] placeholder-brand-text-muted focus:outline-none focus:ring-1 focus:ring-brand-blue focus:border-brand-blue bg-white">
+                </div>
+
+                <div class="flex flex-col gap-[8px]">
+                    <label class="text-[16px] leading-[20px] font-medium text-black after:content-['*'] after:ml-1 after:text-red-500">
+                        Email address
+                    </label>
+                    <input type="email" placeholder="Enter email address" class="w-full h-[51px] border border-brand-border rounded-[8px] px-[16px] text-[16px] placeholder-brand-text-muted focus:outline-none focus:ring-1 focus:ring-brand-blue focus:border-brand-blue bg-white">
+                </div>
+
+                <div class="flex flex-col gap-[8px]">
+                    <label class="text-[16px] leading-[20px] font-medium text-black after:content-['*'] after:ml-1 after:text-red-500">
+                        Phone number
+                    </label>
+                    <input type="tel" placeholder="Enter phone number" class="w-full h-[51px] border border-brand-border rounded-[8px] px-[16px] text-[16px] placeholder-brand-text-muted focus:outline-none focus:ring-1 focus:ring-brand-blue focus:border-brand-blue bg-white">
+                </div>
+
+                <div class="flex flex-col gap-[8px]">
+                    <label class="text-[16px] leading-[20px] font-medium text-black after:content-['*'] after:ml-1 after:text-red-500">
+                        Country
+                    </label>
+                    <input type="text" placeholder="Enter your country" class="w-full h-[51px] border border-brand-border rounded-[8px] px-[16px] text-[16px] placeholder-brand-text-muted focus:outline-none focus:ring-1 focus:ring-brand-blue focus:border-brand-blue bg-white">
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-[20px]">
+                    <div class="flex flex-col gap-[8px]">
+                        <label class="text-[16px] leading-[20px] font-medium text-black">City</label>
+                        <input type="text" placeholder="Enter city" class="w-full h-[51px] border border-brand-border rounded-[8px] px-[16px] text-[16px] placeholder-brand-text-muted focus:outline-none focus:ring-1 focus:ring-brand-blue focus:border-brand-blue bg-white">
+                    </div>
+                    <div class="flex flex-col gap-[8px]">
+                        <label class="text-[16px] leading-[20px] font-medium text-black">State</label>
+                        <input type="text" placeholder="Enter state" class="w-full h-[51px] border border-brand-border rounded-[8px] px-[16px] text-[16px] placeholder-brand-text-muted focus:outline-none focus:ring-1 focus:ring-brand-blue focus:border-brand-blue bg-white">
+                    </div>
+                    <div class="flex flex-col gap-[8px]">
+                        <label class="text-[16px] leading-[20px] font-medium text-black">ZIP Code</label>
+                        <input type="text" placeholder="Enter ZIP code" class="w-full h-[51px] border border-brand-border rounded-[8px] px-[16px] text-[16px] placeholder-brand-text-muted focus:outline-none focus:ring-1 focus:ring-brand-blue focus:border-brand-blue bg-white">
+                    </div>
+                </div>
+            </form>
+        </div>
+
+        <div class="w-full md:w-[528px] lg:mt-[67px] flex-shrink-0 flex flex-col">
+
+            <h2 class="text-[20px] leading-[24px] font-bold text-black mb-[24px]">Review your cart</h2>
+
+            <div class="flex flex-col gap-[24px] mb-[40px]">
+
+                <div class="flex gap-[16px] items-center h-[100px]">
+                    <div class="w-[100px] h-[100px] bg-white border border-[#D4D4D4] rounded-[8px] overflow-hidden flex-shrink-0 flex items-center justify-center p-2">
+                        <img src="https://images.unsplash.com/photo-1555041469-a586c61ea9bc?auto=format&fit=crop&w=100&q=80" alt="DuoComfort Sofa Premium" class="w-full h-full object-cover">
+                    </div>
+                    <div class="flex flex-col justify-center h-full flex-1">
+                        <div class="flex flex-col gap-[8px] mb-auto">
+                            <h3 class="text-black font-medium text-[16px] leading-[20px]">DuoComfort Sofa Premium</h3>
+                            <p class="text-[#737373] text-[14px] leading-[17px]">1x</p>
+                        </div>
+                        <p class="text-black font-bold text-[16px] leading-[20px]">$20.00</p>
+                    </div>
+                </div>
+
+                <div class="flex gap-[16px] items-center h-[100px]">
+                    <div class="w-[100px] h-[100px] bg-white border border-[#D4D4D4] rounded-[8px] overflow-hidden flex-shrink-0 flex items-center justify-center p-2">
+                        <img src="https://images.unsplash.com/photo-1518455027359-f3f8164ba6bd?auto=format&fit=crop&w=100&q=80" alt="IronOne Desk" class="w-full h-full object-cover">
+                    </div>
+                    <div class="flex flex-col justify-center h-full flex-1">
+                        <div class="flex flex-col gap-[8px] mb-auto">
+                            <h3 class="text-black font-medium text-[16px] leading-[20px]">IronOne Desk</h3>
+                            <p class="text-[#737373] text-[14px] leading-[17px]">1x</p>
+                        </div>
+                        <p class="text-black font-bold text-[16px] leading-[20px]">$25.00</p>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="flex flex-col gap-[24px]">
+
+                <div class="flex flex-col gap-[16px]">
+                    <div class="flex justify-between items-center w-full h-[17px]">
+                        <span class="text-[14px] text-brand-text-darkgray leading-[17px]">Subtotal</span>
+                        <span class="text-[14px] font-bold text-black leading-[17px]">$45.00</span>
+                    </div>
+                    <div class="flex justify-between items-center w-full h-[17px]">
+                        <span class="text-[14px] text-brand-text-darkgray leading-[17px]">Shipping</span>
+                        <span class="text-[14px] font-bold text-black leading-[17px]">$5.00</span>
+                    </div>
+                    <div class="flex justify-between items-center w-full h-[17px]">
+                        <span class="text-[14px] text-brand-text-darkgray leading-[17px]">Discount</span>
+                        <span class="text-[14px] font-bold text-black leading-[17px]">-$10.00</span>
+                    </div>
+                </div>
+
+                <div class="flex justify-between items-center w-full h-[20px]">
+                    <span class="text-[16px] font-bold text-black leading-[20px]">Total</span>
+                    <span class="text-[16px] font-bold text-black leading-[20px]">$40.00</span>
+                </div>
+
+                <button type="button" class="w-full h-[52px] bg-brand-blue hover:bg-brand-blue-hover text-white font-bold text-[16px] rounded-[8px] flex items-center justify-center transition-colors duration-200">
+                    Pay Now
+                </button>
+            </div>
+
+        </div>
+    </div>
+</main>
+
+<footer class="h-[88px] bg-white flex items-center justify-center w-full mt-auto">
+    <div class="text-[12px] font-medium text-brand-text-gray px-[20px] text-center">
+        © 2026 Furniture, Inc. All Rights Reserved
+    </div>
+</footer>
+
+</body>
+</html>
